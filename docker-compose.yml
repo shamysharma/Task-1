@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  db:
+    image: postgres
+    volumes:
+      - ./c/Programfiles/PostgreSQL/15/data
+    ports:
+      - "8080:5432"
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=shamy@123
+      - POSTGRES_db = task1
